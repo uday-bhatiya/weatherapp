@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weathe App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="head">
+            <div class="search-bar">
+                <input class="input-box" type="text" placeholder="enter your location" on="chechWeather()">
+                <button id="searchBtn" class="btn fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+
+        <div class="not-found">
+            <h3>oops! 404</h3>
+            <img src="img/404.png" alt="">
+            <p>location not found :) </p>
+        </div>
+
+        <div class="weather-body">
+
+            <img class="weather-img" src="img/clear.png" alt="weather Img">
+
+            <div class="weather-details">
+                <p class="temperature"></p>
+                <p class="description"></p>
+            </div>
+
+            <div class="weather-content">
+
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity"></span>
+                        <p>humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="windSpeed"></span>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+       
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
